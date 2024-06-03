@@ -1,0 +1,8 @@
+name: Identify Breaking Proto Changes
+
+on:
+  pull_request:
+
+jobs:
+  proto_breaking:
+    uses: bstoll/common-ci/.github/workflows/proto_breaking.yml@a8f8b9a36e9ffc19e79ae41bbbd16015ab38693a
