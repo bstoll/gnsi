@@ -17,6 +17,7 @@ This is a copy of @com_github_grpc_grpc//bazel/cc_grpc_library.bzl including
 the fix in https://github.com/grpc/grpc/pull/38915.
 """
 
+load("@com_google_protobuf//bazel:cc_proto_library.bzl", "cc_proto_library")
 load("@rules_proto//proto:defs.bzl", "proto_library")
 load("//bazel:generate_cc.bzl", "generate_cc")
 load("//bazel:protobuf.bzl", "well_known_proto_libs")
